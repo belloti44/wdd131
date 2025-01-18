@@ -1,0 +1,12 @@
+body {
+    display:grid;
+    grid-template-columns:1fr;
+    background-color: blue;
+    
+    
+}
+.navigation {
+    display:flex;
+    flex-direction: column;
+
+}
