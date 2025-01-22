@@ -1,0 +1,78 @@
+body {
+     font-family: Lato,Roboto condensed;
+     margin:10px;
+     padding:20px;
+     background-color:white;
+}
+header h1{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    background-color: aquamarine;
+    padding:10px;
+    border:10px;
+    margin:0;
+    color:white;
+}
+nav {
+    display:flex;
+    background-color: black;
+    overflow:hidden;
+    text-align:center; 
+    justify-content: center;  
+
+}
+nav a {
+    display:block;
+    color: white;
+    padding: 15px 20px;
+    text-align:center;
+    margin:0px 80px 0px 100px;
+    
+}
+nav a:hover {
+    color:white;
+}
+img {
+    height: 200px;
+    width:150px;
+}
+main {
+    display: flex;
+    margin:20px;
+}
+.card h2 {
+    background-color: aquamarine;
+    margin:0;
+    padding:0;
+    
+}
+.card {
+    border:solid black 4px;
+    border-radius: 8px;
+    margin: 5px; 
+    display:block; 
+    overflow:hidden;  
+}
+.card img {
+    float:right;
+    margin-left: 20px;
+    width: 150px;
+    height:auto;
+    border-radius: 8px;
+    
+    
+}
+.card p {
+    float:left;
+    padding:10px;
+}
+footer {
+    background-color: aquamarine;
+    text-align: center;
+}
+.card figure {
+    float:left;
+    padding:5px;
+    
+}
