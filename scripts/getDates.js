@@ -1,22 +1,14 @@
-// Function to display the current year in the footer's first paragraph
-function displayCurrentYear() {
-    const currentYear = new Date().getFullYear(); // Get the current year
-    const yearElement = document.querySelector('footer p:first-of-type'); // Select the first paragraph in the footer
-    if (yearElement) {
-        yearElement.textContent = '© ${currentYear} £ Isaiah Wambani'; // Set the content with the current year
-    }
+// Select all paragraph elements in the footer
+let footerParagraphs = document.querySelectorAll('footer p');
+
+// 1. Dynamically set the copyright year in the first paragraph
+let currentYear = new Date().getFullYear(); // Get the current year
+if (footerParagraphs[0]) {
+  footerParagraphs[0].textContent = '© ${currentYear} 👌 Isaiah Wambani Mutambo';
 }
 
-// Function to display the last modified date and time in the second paragraph
-function displayLastModified() {
-    const lastModified = new Date(document.lastModified); // Get the last modified date as a Date object
-    const formattedDate = lastModified.toLocaleString(); // Format the date and time
-    const modifiedElement = document.querySelector('footer p:nth-of-type(2)'); // Select the second paragraph in the footer
-    if (modifiedElement) {
-        modifiedElement.textContent = 'Last modified: ${formattedDate}';// Set the content with the formatted date and time
-    }
+// 2. Dynamically set the document's last modified date in the second paragraph
+let lastModified = document.lastModified; // Get the document's last modified date
+if (footerParagraphs[1]) {
+  footerParagraphs[1].textContent =' Last modified: ${lastModified}';
 }
-
-// Call the functions to display the values
-displayCurrentYear();
-displayLastModified();
